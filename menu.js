@@ -31,7 +31,17 @@
 */
 
 //CODE HERE
-
+let pizza = {
+    name: 'Pepperoni',
+    price: 25,
+    category: 'Entree',
+    popularity: 1,
+    rating: .08,
+    tags: {
+        tag1 : 'Thin crust',
+        tag2 : 'X Large'
+    }
+}
 
 
 //////////////////PROBLEM 2////////////////////
@@ -43,7 +53,7 @@
 */
 
 //CODE HERE
-
+console.log(pizza.popularity)
 
 /*
     Second, log the second tag in your pizza's
@@ -53,7 +63,7 @@
 */
 
 //CODE HERE
-
+console.log(pizza.tags['tag2'])
 
 /*
     Third, destructure the price off of the
@@ -63,6 +73,8 @@
 */
 
 //CODE HERE
+let {price} = pizza
+console.log(price)
 
 
 /*
@@ -73,7 +85,8 @@
 */
 
 //CODE HERE
-
+let {category} = pizza
+console.log(category)
 
 //////////////////PROBLEM 3////////////////////
 /* 
@@ -88,7 +101,58 @@
 */
 
 //CODE HERE
-
+let foodArr = [
+    {name: 'Cheese',
+    price: 20,
+    category: 'Entree',
+    popularity: 2,
+    rating: .07,
+    tags: {
+        tag1 : 'Thick crust',
+        tag2 : 'Large'
+        }
+    },
+    {name: 'Mushroom',
+    price: 23,
+    category: 'Entree',
+    popularity: 3,
+    rating: .06,
+    tags: {
+        tag1 : 'Deep Dish',
+        tag2 : 'Medium'
+        }
+    },
+    {name: 'Sausage',
+    price: 24,
+    category: 'Entree',
+    popularity: 4,
+    rating: .05,
+    tags: {
+        tag1 : 'Dry',
+        tag2 : 'Small'
+        }
+    },
+    {name: 'Bacon',
+    price: 29,
+    category: 'Entree',
+    popularity: 5,
+    rating: .04,
+    tags: {
+        tag1 : 'Wet',
+        tag2 : 'X Small'
+        }
+    },
+        {name: 'Olive',
+    price: 21,
+    category: 'Entree',
+    popularity: 6,
+    rating: .03,
+    tags: {
+        tag1 : 'Mid',
+        tag2 : 'XX Small'
+        }
+    }
+]
 
 
 //////////////////PROBLEM 4////////////////////
@@ -104,6 +168,9 @@
 */
 
 //CODE HERE
+
+const pizzaTag = foodArr.filter(foodArr => foodArr.includes('Mid'))
+console.log(pizzaTag)
 
 // const filteredFood = foodArr.filter(/* CALLBACK HERE */)
 
