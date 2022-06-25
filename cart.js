@@ -33,10 +33,11 @@ const cart = [
     }
 ]
 
-//CODE HERE
+// //CODE HERE
 
-// const summedPrice = cart.reduce(/* CALLBACK HERE */)
+const summedNums = cart.map(num => num.price).reduce((x, y) => x + y)
 
+console.log(summedNums)
 
 //////////////////PROBLEM 2////////////////////
 /*  
@@ -54,6 +55,10 @@ const cart = [
 */
 
 //CODE HERE
+
+
+const calculateFinalPrice = (cartTotal, couponValue, tax) => ((cartTotal * (1 + tax)) - couponValue)
+console.log (calculateFinalPrice(10,1,.05))
 
 
 
@@ -78,7 +83,13 @@ const cart = [
 */
 
 /*
-    TEXT ANSWER HERE
+    Customer first, last name, and email address for order tracking reasons
+    Food ordered for order tracking reasons
+    Food cost for checkout cart reasons
+
+    Customer info will be in string form so they can easily input their information
+    ordered food will also be a string for easy backend tracking
+    food cost will be a number value so it can be totalled at the end cart easier
 
 */
 
@@ -88,3 +99,10 @@ const cart = [
 */
 
 //CODE HERE
+const customer = {
+    'firstName': 'Emily',
+    'lastName': 'Rand',
+    'emailAddress': 'emilyrandom@gmail.com',
+    'foodOrdered': 'Large Pizza',
+    foodCost: 25
+}
