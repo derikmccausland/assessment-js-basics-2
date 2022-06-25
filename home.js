@@ -22,7 +22,7 @@
 */
 
 //CODE HERE
-
+const greetUser = (userName) => `Welcome back, ${userName}`
 
 
 
@@ -50,8 +50,14 @@
 const deliveryAreaZipCodes = [85205, 85204, 85203, 85213, 85206]
 
 //CODE HERE
+const canWeDeliver = (zipCode) => {
+    if(deliveryAreaZipCodes.includes(zipCode)) {
+        return "You're in our delivery zone!"
+    } else {
+        return "Sorry, we can't deliver to that address"
+    }
 
-
+}
 
 /* 
     Problem 2 Continued
@@ -71,8 +77,21 @@ const deliveryAreaZipCodes = [85205, 85204, 85203, 85213, 85206]
 */
 
 // CODE HERE
+const canWeDeliverTwo = (zipCode) => {
+    for (let i = 0; i < deliveryAreaZipCodes.length; i++) {
+        if (deliveryAreaZipCodes[i] === zipCode)
+    {
+        return "You're in our delivery zone!"
+    } else {
+        return "Sorry, we can't deliver to that address"
+    }
 
-
+}
+}
+console.log(canWeDeliver(85205))
+console.log(canWeDeliver(85652))
+console.log(canWeDeliverTwo(85205))
+console.log(canWeDeliverTwo(84565))
 //////////////////PROBLEM 3////////////////////
 /* 
     Below is an array of objects that have some
@@ -108,7 +127,9 @@ const deals = [
 
 //CODE HERE
 
-
+"I don't know how to do this... everything i can see about the replace method is just for strings, and i don't know how to access"
+"the string inside the group in the array without editing it directly, I wish I could show you something but it would"
+"just be me editing the array so I'm sorry. :( "
 
 /*
     The restaurant is going to continue its
@@ -124,3 +145,5 @@ const deals = [
 */
 
 //CODE HERE
+
+"same problem here."
