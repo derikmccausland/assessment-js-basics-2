@@ -177,29 +177,6 @@ console.log(pizzaTag)
 
 // const filteredFood = foodArr.filter(/* CALLBACK HERE */)
 
-// function filterByProperty(property, number, type) {
-//     return foodArr.filter((foodItem) => {
-//         let foodProperty = foodItem.price;
-//         switch (property) {
-//             case 'price':
-//                 foodProperty = foodItem.price;
-//                 break;
-//             case 'popularity':
-//                 foodProperty = foodItem.popularity;
-//                 break;
-//             case 'rating':
-//                 foodProperty = foodItem.rating;
-//                 break;
-//         }
-//         if (type === 'above') {
-//             return foodProperty > number;
-//         } else {
-//             return foodProperty < number;
-//         }
-//     });
-// }
-
-
 //////////////////PROBLEM 5////////////////////
 /* 
     Now let's write a function that's a little
