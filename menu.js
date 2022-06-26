@@ -168,12 +168,36 @@ let foodArr = [
 */
 
 //CODE HERE
+function filterForMid(foodItem) {
+    return foodItem.tags.tag1 === 'Mid';
+}
 
-const pizzaTag = foodArr.filter(foodArr => foodArr.includes('Mid'))
+const pizzaTag = foodArr.filter(filterForMid)
 console.log(pizzaTag)
 
 // const filteredFood = foodArr.filter(/* CALLBACK HERE */)
 
+// function filterByProperty(property, number, type) {
+//     return foodArr.filter((foodItem) => {
+//         let foodProperty = foodItem.price;
+//         switch (property) {
+//             case 'price':
+//                 foodProperty = foodItem.price;
+//                 break;
+//             case 'popularity':
+//                 foodProperty = foodItem.popularity;
+//                 break;
+//             case 'rating':
+//                 foodProperty = foodItem.rating;
+//                 break;
+//         }
+//         if (type === 'above') {
+//             return foodProperty > number;
+//         } else {
+//             return foodProperty < number;
+//         }
+//     });
+// }
 
 
 //////////////////PROBLEM 5////////////////////
@@ -216,7 +240,32 @@ console.log(pizzaTag)
 */
 
 //CODE HERE
-
+function filterByProperty(property, number, type) {
+    /*
+    array.filter() {
+        check property is type (above or below) number
+    }
+     */
+    return foodArr.filter((foodItem) => {
+        let foodProperty;
+        switch (property) {
+            case 'price':
+                foodProperty = foodItem.price;
+                break;
+            case 'popularity':
+                foodProperty = foodItem.popularity;
+                break;
+            case 'rating':
+                foodProperty = foodItem.rating;
+                break;
+        }
+    if (type === 'above') {
+        return foodProperty > number 
+    } else {
+        return foodProperty < number
+    }
+    })
+}
 
 /*
     Invoke the `filterByProperty` function passing
@@ -226,3 +275,5 @@ console.log(pizzaTag)
 */
 
 //CODE HERE
+console.log("*****HERE********")
+console.log(filterByProperty("popularity", 4, "above"))

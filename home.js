@@ -126,10 +126,8 @@ const deals = [
 */
 
 //CODE HERE
-
-"I don't know how to do this... everything i can see about the replace method is just for strings, and i don't know how to access"
-"the string inside the group in the array without editing it directly, I wish I could show you something but it would"
-"just be me editing the array so I'm sorry. :( "
+deals[0].title = deals[0].title.replace('15', '10')
+console.log(deals) 
 
 /*
     The restaurant is going to continue its
@@ -146,4 +144,5 @@ const deals = [
 
 //CODE HERE
 
-"same problem here."
+deals[1].desc = deals[1].desc.replace('March', 'April').trim()
+console.log(deals)
