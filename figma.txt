@@ -1,2 +1,13 @@
 LINK TO FIGMA:
 https://www.figma.com/file/deSXJcS6vn08lCyHQqiTme/Untitled?node-id=0%3A1
+
+Extra Credit:
+
+Adobe Premiere Pro: 
+Backend - C++/Python - Front end - Typescript
+
+Caliber:
+Backend - Cloujure Front end - HTML/CSS
+
+Golden Hippo:
+Backend - Node Front end - Angular
